@@ -1,0 +1,55 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .container-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .google {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #808080;
+    width: 200px;
+    padding: 5px;
+    font-weight: 600;
+  }
+  
+  .apple {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #808080;
+    width: 200px;
+    padding: 5px;
+    font-weight: 600;
+  }
+  
+  .create-account {
+    background-color: #00acee;
+    border-radius: 8px;
+    border: 1px solid #808080;
+    width: 200px;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+  }
+  
+  .sign {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #808080;
+    width: 200px;
+    color: #00acee;
+    font-weight: 600;
+    padding: 5px;
+  }
+
+  button {
+    cursor: pointer;
+  }
