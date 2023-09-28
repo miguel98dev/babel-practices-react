@@ -15,14 +15,14 @@ const EstadosVariableLocal = (props) => {
   }
 
   const handleClickCount = (n) => {
-    setCount(n)
+    setCount(n => n + 1)
   }
   return (
     <div>
       <h1>Diferencias entre variables locales y estados</h1>
       <button onClick={() => handleClickEstado()}>Cambiar estado</button>
       <button onClick={() => handleClickNoEstado()}>Cambiar no estado</button>
-      <button onClick={() => handleClickCount(5)}>Modificar contador</button>
+      <button onClick={() => handleClickCount()}>Modificar contador</button>
       <p>Estado: {state}</p>
       <p>Local: {state}</p>
       <p>Contador:{count}</p>

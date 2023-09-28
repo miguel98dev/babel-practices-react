@@ -4,9 +4,9 @@ const EstadoFijoRenderizado = () => {
   const [number, setNumber] = useState(0)
 
   const handleClick = () => {
-    // ! setNumber(number + 1) // valor fijo
+    // setNumber(number + 1) // valor fijo
     setNumber(n => n + 1) // trabajando con funciones
-    setNumber(n => n + 1)
+    // setNumber(n => n + 1)
   }
   return (
     <>
