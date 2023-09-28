@@ -3,7 +3,7 @@ import { useState } from 'react'
 const EstadosVariableLocal = (props) => {
   const [state, setState] = useState('')
 
-  const notState = ''
+  // const notState = ''
 
   const handleClickEstado = () => {
     setState('soy un estado')
