@@ -1,10 +1,13 @@
 import Panel from './components/Panel'
+import Children from './components/Children'
 
 function App () {
   return (
-    <>
-      <Panel />
-    </>
+    <div>
+      <Panel>
+        <Children />
+      </Panel>
+    </div>
   )
 }
 
