@@ -10,7 +10,9 @@ const Button = ({ type = 'primary', disabled = false, onClick, children }) => {
     <button className={buttonClass} disabled={disabled} onClick={onClick}>
       {/* {type === 'primary' ? 'Botón Primario' : 'Botón secundario'}, */}
       {children}
+      {console.log(children)}
     </button>
+
   )
 }
 
