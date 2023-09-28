@@ -11,7 +11,7 @@ const Panel = ({ title = 'Panel contraido', children }) => {
     <div className='panel'>
       <h2>{title}</h2>
       {expanded && <div>{children}</div>}
-      <button className='action' onClick={toogleExpansion}></button>
+      <button className='action' onClick={toogleExpansion}>
         {expanded ? 'Contraer' : 'Expandir'}
       </button>
 
