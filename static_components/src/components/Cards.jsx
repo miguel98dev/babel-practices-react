@@ -3,7 +3,7 @@ import Card from './Card'
 const cards = [
   {
     id: 0,
-    image: 'https://picsum.photos/id/9/400/250',
+    image: undefined,
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit error, eos recusandae nihil ipsum distinctio natus accusamus repellat est in fugiat vitae quia quasi architecto hic voluptatibus nulla dolor elit'
   },
   {
