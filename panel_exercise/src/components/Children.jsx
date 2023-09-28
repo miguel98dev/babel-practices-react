@@ -1,7 +1,7 @@
 const Children = () => {
   return (
     <div>
-      <h1>EXPANDIDO</h1>
+      <h2>EXPANDIDO</h2>
     </div>
   )
 }

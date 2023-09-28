@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const Panel = ({ title = 'Panel contraido', children }) => {
+const Panel = ({ title = 'PANEL', children }) => {
   const [expanded, setExpanded] = useState(false)
 
   const toogleExpansion = () => {
@@ -9,7 +9,7 @@ const Panel = ({ title = 'Panel contraido', children }) => {
 
   return (
     <div className='panel'>
-      <h2>{title}</h2>
+      <h1 className='title'>{title}</h1>
       {expanded && <div>{children}</div>}
       <button className='action' onClick={toogleExpansion}>
         {expanded ? 'Contraer' : 'Expandir'}

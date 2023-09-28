@@ -41,6 +41,12 @@ body {
 
 .panel {
   border: solid 2px teal;
-  padding: 10px
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  font-weight: 700;
 }
 
