@@ -1,4 +1,7 @@
 import Button from './components/Button'
+import ChildrenContainer from './components/ChildrenContainer'
+import EstadosVariableLocal from './components/EstadosVariableLocal'
+import RenderizadoCondicional from './components/RenderizadoCondicional'
 
 function App () {
   // se ejecuta al hacer click en cualquier boton
@@ -6,11 +9,19 @@ function App () {
     window.alert('Click en el botón')
   }
   return (
-    <div>
-      <Button type='primary' onClick={handleClick} />
-      <Button type='secondary' onClick={handleClick} />
-      <Button disabled onClick={handleClick} />
-    </div>
+    <>
+      <ChildrenContainer>
+        <h1>Contenedor con hijos</h1>
+        <div>
+          <Button type='primary' onClick={handleClick}>Children</Button>
+          <Button type='secondary' onClick={handleClick}>Button children</Button>
+          <Button disabled onClick={handleClick}>Otro children</Button>
+        </div>
+      </ChildrenContainer>
+      <RenderizadoCondicional goodbye />
+      <RenderizadoCondicional disabled />
+      <EstadosVariableLocal />
+    </>
   )
 }
 
