@@ -2,6 +2,7 @@ import Button from './components/Button'
 import ChildrenContainer from './components/ChildrenContainer'
 import EstadosVariableLocal from './components/EstadosVariableLocal'
 import RenderizadoCondicional from './components/RenderizadoCondicional'
+import Switch from './components/Switch'
 
 function App () {
   // se ejecuta al hacer click en cualquier boton
@@ -21,6 +22,7 @@ function App () {
       <RenderizadoCondicional goodbye />
       <RenderizadoCondicional disabled />
       <EstadosVariableLocal />
+      <Switch />
     </>
   )
 }

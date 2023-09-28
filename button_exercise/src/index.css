@@ -24,3 +24,11 @@
   background-color: #ddd;
   color: #666;
 }
+
+.switch.on {
+  background-color: blue;
+}
+
+.switch.off {
+  background-color: aqua;
+}
