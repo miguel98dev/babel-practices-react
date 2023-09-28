@@ -1,11 +1,11 @@
 const Render = ({ data }) => {
-  const handleClick = (item) => {
+  const handleClick = (item) => { // cuando se de click
     window.alert(`Datos del elementos seleccionado: \nNombre: ${item.name}\nColor: ${item.color}`)
   }
   return (
     <div>
       <ul>
-        {data.map((item) => (
+        {data.map((item) => ( // recorremos la lista
           <li key={item.name}>
             <span style={{ color: item.color, fontWeight: item.checked ? 'bold' : 'normal' }}>
               {item.name}
