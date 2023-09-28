@@ -7,7 +7,8 @@ const Switch = () => {
   const [state, setState] = useState(false)
 
   const handleClick = () => {
-    setState(!state) // invierte el estado
+    // setState(!state) // invierte el estado
+    setState((prevState) => !prevState) // ambas sirven
   }
 
   return (

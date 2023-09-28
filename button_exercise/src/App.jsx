@@ -3,6 +3,7 @@ import ChildrenContainer from './components/ChildrenContainer'
 import EstadosVariableLocal from './components/EstadosVariableLocal'
 import RenderizadoCondicional from './components/RenderizadoCondicional'
 import Switch from './components/Switch'
+import EstadoFijoRenderizado from './components/EstadoFijoRenderizado'
 
 function App () {
   // se ejecuta al hacer click en cualquier boton
@@ -23,6 +24,7 @@ function App () {
       <RenderizadoCondicional disabled />
       <EstadosVariableLocal />
       <Switch />
+      <EstadoFijoRenderizado />
     </>
   )
 }
