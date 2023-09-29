@@ -15,6 +15,7 @@ const Switch = () => {
     <div className={`switch ${state ? 'on' : 'off'}`}>
       <p>{state ? 'Activado' : 'Desactivado'}</p>
       <button onClick={() => handleClick()}>ClickMe!</button>
+      <button>Cambiar color de fondo</button>
     </div>
   )
 }
