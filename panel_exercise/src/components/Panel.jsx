@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-const Panel = ({ title = 'PANEL', children }) => {
+const Panel = ({ title, children }) => {
   const [expanded, setExpanded] = useState(false)
 
   const toogleExpansion = () => {
-    setExpanded((prevState) => !prevState)
+    setExpanded(prevState => !prevState)
   }
 
   return (

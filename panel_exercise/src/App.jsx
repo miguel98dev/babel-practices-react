@@ -4,7 +4,7 @@ import Children from './components/Children'
 function App () {
   return (
     <div>
-      <Panel>
+      <Panel title='PANEL'>
         <Children />
       </Panel>
     </div>
