@@ -1,0 +1,8 @@
+1. Definir un formulario de registro de usuarios que contenga varias entradas: Nombre de usuario, correo electrónico, contraseña y confirmación de contraseña.
+    1. Realización simple.
+    2. Aumentando la complejidad
+    3. Impedir el registro si alguno de los campos esta vacio..
+    4. Agregar validaciones a cada una de la entradas
+    5. Mostrar feedback al usuaurio respecto a las validaciones realizadas
+
+    
