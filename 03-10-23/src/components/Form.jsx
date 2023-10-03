@@ -13,36 +13,40 @@ const Form = () => {
       lengthPoints = 2
     } else if (password.length > 12) {
       lengthPoints = 3
-    } else if (password.length <= 8) {
-      lengthPoints = 2
-    } else if (password.length <= 6) {
+    } else if (password.length === 7 || password.length === 8) {
+      lengthPoints = 1
+    } else {
       lengthPoints = 0
     }
-
+    // letra
     const letterPoints = /[a-zA-Z]/.test(password) ? 1 : 0
 
+    // letras mayuscula y minusculas
     const mixedCasePoints =
       /[a-z]/.test(password) && /[A-Z]/.test(password) ? 2 : 0
 
+    // numeros
     const numberPoints = /\d/.test(password) ? 1 : 0
 
+    // simbolos
     const symbolPoints = /[$&+,:;=?@#|'<>.^*()%!-]/.test(password) ? 2 : 0
 
-    const maxPoints = Math.max(
-      lengthPoints,
-      letterPoints,
-      mixedCasePoints,
-      numberPoints,
-      symbolPoints
-    )
+    // maximos puntos
+    // const maxPoints = Math.max(
+    //   lengthPoints,
+    //   letterPoints,
+    //   mixedCasePoints,
+    //   numberPoints,
+    //   symbolPoints
+    // )
 
+    // total fortaleza puntos
     const totalStrength =
       lengthPoints +
       letterPoints +
       mixedCasePoints +
       numberPoints +
-      symbolPoints +
-      maxPoints
+      symbolPoints
 
     setStrength(totalStrength)
   }
@@ -62,6 +66,10 @@ const Form = () => {
       setConfirmWeakPassword(true)
     }
   }
+
+  const confirm = () => {
+    setAccepted(true)
+  }
   return (
     <div>
       <h2>Password Strength Checker</h2>
@@ -74,10 +82,19 @@ const Form = () => {
             onChange={handlePasswordChange}
           />
         </label>
+        <input
+          disabled
+          type='number'
+          value={umbral}
+          onChange={(e) => setUmbral(parseInt(e.target.value))}
+        />
         <button type='submit'>Submit</button>
       </form>
       {confirmWeakPassword && (
-        <p>La contraseña es débil. ¿Desea confirmarla?</p>
+        <div>
+          <p>La contraseña es débil. ¿Desea confirmarla?</p>
+          <button onClick={confirm}>Confirmar</button>
+        </div>
       )}
       {accepted && <p>La contraseña ha sido aceptada.</p>}
     </div>
