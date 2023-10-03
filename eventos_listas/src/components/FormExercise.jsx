@@ -1,14 +1,20 @@
 import { useState } from 'react'
 
 const FormExercise = () => {
+  // const regExp = {
+  //   userRegExp: /^[a-zA-Z0-9]{4,16}$/
+  // }
   const [values, setValues] = useState({
-    username: '',
+    username: /^[a-zA-Z0-9]{4,16}$/,
     email: '',
     password: '',
     confirmPassword: ''
   })
 
   const handleSubmit = (e) => {
+    if (values.password !== values.confirmPassword) {
+      window.alert('Las contraseás no coinciden')
+    }
     e.preventDefault()
   }
 
