@@ -17,7 +17,7 @@ const FormExercise = () => {
     const { target } = e
     // obtenemos dos propiedades (atributo y value del input)
     const { name, value } = target
-    console.log({ name, value })
+    // console.log({ name, value })
 
     const newValues = {
       // copiamos las propiedades de values
@@ -30,16 +30,43 @@ const FormExercise = () => {
 
   return (
     <div className='border-2 rounded border-purple-400'>
-      <form onSubmit={handleSubmit} className='grid p-4'>
+      <form
+        onSubmit={handleSubmit}
+        className='grid p-4'
+      >
         <label>Username</label>
-        <input type='text' name='username' onChange={handleChange} required />
+        <input
+          type='text'
+          name='username'
+          onChange={handleChange}
+          required
+        />
         <label>Email</label>
-        <input type='email' name='email' onChange={handleChange} required />
+        <input
+          type='email'
+          name='email'
+          onChange={handleChange}
+          required
+        />
         <label>Password</label>
-        <input type='password' name='password' onChange={handleChange} required />
+        <input
+          type='password'
+          name='password'
+          onChange={handleChange}
+          required
+        />
         <label>Confirm password</label>
-        <input type='password' name='confirmPassword' onChange={handleChange} required />
-        <input className='bg-purple-400 font-bold mt-2 py-2 px-4 rounded' type='submit' value='Enviar' />
+        <input
+          type='password'
+          name='confirmPassword'
+          onChange={handleChange}
+          required
+        />
+        <input
+          className='bg-purple-400 font-bold mt-2 py-2 px-4 rounded'
+          type='submit'
+          value='Enviar'
+        />
       </form>
     </div>
   )
