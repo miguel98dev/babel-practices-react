@@ -128,7 +128,6 @@ const FormExercise = () => {
 
 export default FormExercise
 
-
 /*
 https://www.escuelafrontend.com/formularios-en-react
 [x] definir el formulario de registro
