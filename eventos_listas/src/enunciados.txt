@@ -1,8 +1,5 @@
-1. Definir un formulario de registro de usuarios que contenga varias entradas: Nombre de usuario, correo electrónico, contraseña y confirmación de contraseña.
-    1. Realización simple.
-    2. Aumentando la complejidad
-    3. Impedir el registro si alguno de los campos esta vacio..
-    4. Agregar validaciones a cada una de la entradas
-    5. Mostrar feedback al usuaurio respecto a las validaciones realizadas
 
-    
+
+Crea un Componente que calcule la posición vertical en la que se encuentra el usuario mediante la captura del evento "onScroll" del contenedor. Este dato se almacenará y se mostrará por pantalla.
+
+crea un Componente que renderice un botón, siempre visible en la parte inferior derecha que, al pulsarlo, haga scroll automáticamente hasta arriba del todo en la web. Este botón será visible cuando el usuario haya hecho scroll una cantidad considerable.
