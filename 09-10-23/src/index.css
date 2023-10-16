@@ -24,13 +24,11 @@ a:hover {
 }
 
 body {
-  box-sizing: border-box;
-  display: grid;
+  margin: 0;
+  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 h1 {
@@ -57,46 +55,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-form {
-  display: grid;
-  gap: 10px;
-}
-
-.container-form {
-  border: solid 1px rgb(163, 86, 235);
-  padding: 10px;
-  width: 300px;
-}
-
-.container_productos {
-  display: grid;
-  grid-template-columns:  240px 240px;
-  place-items: center;
-  gap: 50px;
-}
-
-.producto {
-  display: grid;
-  place-items: center;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(165, 71, 253, 0.856);
-  transition: 0.3s;
-  width: 100%;
-  border: solid 0px;
-  border-radius: 4px;
-}
-
-.img {
-  border: solid 0px;
-  border-radius: 8px;
-}
-
-.carrito {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.button-carrito {
-  margin-left: 14px;
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }

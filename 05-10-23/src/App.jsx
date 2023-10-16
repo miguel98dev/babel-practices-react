@@ -1,6 +1,7 @@
 import useToogle from './hooks/useToogle'
 import { ThemeContext } from './hooks/context/ThemeContext'
 import { useState } from 'react'
+import ListaSimple from './components/ListaSimple'
 
 function App () {
   const [state, toogle] = useToogle()
@@ -10,6 +11,7 @@ function App () {
       <ThemeContext>
         <button onClick={() => toogle()}>{state ? 'Apagar' : 'Encender'} </button>
       </ThemeContext>
+      {/* <ListaSimple /> */}
     </>
   )
 }

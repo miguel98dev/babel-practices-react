@@ -1,5 +1,5 @@
 import { createContext } from 'react'
-import useToggle from '../hooks/useToggle'
+import useToggle from '../useToogle'
 
 const ThemeContext = createContext({
   theme: 'dark',

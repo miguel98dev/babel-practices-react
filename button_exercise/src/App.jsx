@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
 import Button from './components/Button'
 import ChildrenContainer from './components/ChildrenContainer'
 import EstadosVariableLocal from './components/EstadosVariableLocal'
 import RenderizadoCondicional from './components/RenderizadoCondicional'
 import Switch from './components/Switch'
 import EstadoFijoRenderizado from './components/EstadoFijoRenderizado'
+import DesestructuracionArrays from './components/DesestructuracionArrays'
 
 function App () {
   // se ejecuta al hacer click en cualquier boton
@@ -12,7 +14,7 @@ function App () {
   }
   return (
     <>
-      <ChildrenContainer>
+      {/* <ChildrenContainer>
         <h1>Contenedor con hijos</h1>
         <div>
           <Button type='primary' onClick={handleClick}>Children</Button>
@@ -24,7 +26,8 @@ function App () {
       <RenderizadoCondicional disabled />
       <EstadosVariableLocal />
       <Switch />
-      <EstadoFijoRenderizado />
+      <EstadoFijoRenderizado /> */}
+      {/* <DesestructuracionArrays /> */}
     </>
   )
 }

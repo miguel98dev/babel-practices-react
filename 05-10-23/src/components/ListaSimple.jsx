@@ -1,8 +1,8 @@
 import { useReducer } from 'react'
-import listReducer, { initialState } from '../../reducers/Reducer'
+import reducer, { initialState } from '../reducers/reducer'
 
 function ListaSimple ({ props }) {
-  const [state, dispatch] = useReducer(listReducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   function handleAddItem () {
     dispatch({
